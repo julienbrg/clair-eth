@@ -1,0 +1,13 @@
+[julien]
+name = "Julien Béranger"
+uri = "https://twitter.com/julienbrg"
+email = "info@example.com"
+twitter = "julienbrg"
+image = "zyzkov.jpg"
+
+["Hugo Authors"]
+name = "Hugo Authors"
+uri = "https://example.com/"
+email = "info@example.com"
+twitter = "example"
+image = "default.webp"

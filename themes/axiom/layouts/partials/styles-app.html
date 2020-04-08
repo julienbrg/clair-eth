@@ -1,0 +1,11 @@
+{{- with resources.Get "app.css" }}
+{{- $appCSS := printf "%s?v=%d" .RelPermalink now.Unix }}
+<link rel="preload" as="style" href="{{ $appCSS | safeHTML }}" media="all">
+<link rel="stylesheet" href="{{ $appCSS | safeHTML }}" media="all">
+{{- end }}
+
+{{- with resources.Get "custom.css" }}
+{{- $customCSS := printf "%s?v=%d" .RelPermalink now.Unix }}
+<link rel="preload" as="style" href="{{ $customCSS | safeHTML }}" media="all">
+<link rel="stylesheet" href="{{ $customCSS | safeHTML }}" media="all">
+{{- end }}
